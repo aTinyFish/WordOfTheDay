@@ -12,18 +12,77 @@
 		7B256D3E1958A73500B6DFA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256D3D1958A73500B6DFA3 /* ViewController.m */; };
 		7B256D411958A73500B6DFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B256D3F1958A73500B6DFA3 /* Main.storyboard */; };
 		7B256D431958A73500B6DFA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B256D421958A73500B6DFA3 /* Images.xcassets */; };
-		7B256D4F1958A73500B6DFA3 /* WordOfTheDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B256D4E1958A73500B6DFA3 /* WordOfTheDayTests.m */; };
+		7B256D651958C3E100B6DFA3 /* WordOfTheDayFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B256D641958C3E100B6DFA3 /* WordOfTheDayFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B256D751958C3E100B6DFA3 /* WordOfTheDayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B256D601958C3E100B6DFA3 /* WordOfTheDayFramework.framework */; };
+		7B256D761958C3E100B6DFA3 /* WordOfTheDayFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B256D601958C3E100B6DFA3 /* WordOfTheDayFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7B7A80791958CB2300675CC1 /* TFWordOfTheDayFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7A80771958CB2300675CC1 /* TFWordOfTheDayFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B7A807A1958CB2300675CC1 /* TFWordOfTheDayFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7A80781958CB2300675CC1 /* TFWordOfTheDayFetcher.m */; };
+		7BAA64B31959EFE400B3EC87 /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BAA64B11959EFE400B3EC87 /* XMLDictionary.h */; };
+		7BAA64B41959EFE400B3EC87 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA64B21959EFE400B3EC87 /* XMLDictionary.m */; };
+		7BAA64BC195A176400B3EC87 /* WordOfTheDayFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B256D601958C3E100B6DFA3 /* WordOfTheDayFramework.framework */; };
+		7BC3A1101958D9DC00FA41D2 /* TFWordOfTheDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BC3A10E1958D9DC00FA41D2 /* TFWordOfTheDay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BC3A1111958D9DC00FA41D2 /* TFWordOfTheDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3A10F1958D9DC00FA41D2 /* TFWordOfTheDay.m */; };
+		7BC3A1201958DD9600FA41D2 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3A11F1958DD9600FA41D2 /* TodayViewController.m */; };
+		7BC3A1221958DD9600FA41D2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3A1211958DD9600FA41D2 /* MainInterface.storyboard */; };
+		7BC3A1251958DD9600FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7BC3A1171958DD9600FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.appex */; };
+		7BFB0ED9195B3AE000BDBABB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC3A1191958DD9600FA41D2 /* NotificationCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7B256D491958A73500B6DFA3 /* PBXContainerItemProxy */ = {
+		7B256D731958C3E100B6DFA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7B256D2A1958A73500B6DFA3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B256D311958A73500B6DFA3;
-			remoteInfo = WordOfTheDay;
+			remoteGlobalIDString = 7B256D5F1958C3E100B6DFA3;
+			remoteInfo = WordOfTheDayFramework;
+		};
+		7B256D771958C3E100B6DFA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B256D2A1958A73500B6DFA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B256D5F1958C3E100B6DFA3;
+			remoteInfo = WordOfTheDayFramework;
+		};
+		7BC3A1231958DD9600FA41D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B256D2A1958A73500B6DFA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC3A1161958DD9600FA41D2;
+			remoteInfo = Widget;
+		};
+		7BC3A1261958DD9600FA41D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B256D2A1958A73500B6DFA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC3A1161958DD9600FA41D2;
+			remoteInfo = Widget;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B256D7C1958C3E100B6DFA3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B256D761958C3E100B6DFA3 /* WordOfTheDayFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC3A12B1958DD9600FA41D2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BC3A1251958DD9600FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7B256D321958A73500B6DFA3 /* WordOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,9 +94,23 @@
 		7B256D3D1958A73500B6DFA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7B256D401958A73500B6DFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B256D421958A73500B6DFA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7B256D481958A73500B6DFA3 /* WordOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B256D4D1958A73500B6DFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B256D4E1958A73500B6DFA3 /* WordOfTheDayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordOfTheDayTests.m; sourceTree = "<group>"; };
+		7B256D601958C3E100B6DFA3 /* WordOfTheDayFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WordOfTheDayFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B256D631958C3E100B6DFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B256D641958C3E100B6DFA3 /* WordOfTheDayFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordOfTheDayFramework.h; sourceTree = "<group>"; };
+		7B7A80771958CB2300675CC1 /* TFWordOfTheDayFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFWordOfTheDayFetcher.h; path = WordOfTheDayFramework/TFWordOfTheDayFetcher.h; sourceTree = SOURCE_ROOT; };
+		7B7A80781958CB2300675CC1 /* TFWordOfTheDayFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFWordOfTheDayFetcher.m; path = WordOfTheDayFramework/TFWordOfTheDayFetcher.m; sourceTree = SOURCE_ROOT; };
+		7BAA64B11959EFE400B3EC87 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		7BAA64B21959EFE400B3EC87 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		7BC3A10E1958D9DC00FA41D2 /* TFWordOfTheDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFWordOfTheDay.h; sourceTree = "<group>"; };
+		7BC3A10F1958D9DC00FA41D2 /* TFWordOfTheDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFWordOfTheDay.m; sourceTree = "<group>"; };
+		7BC3A1121958DBFF00FA41D2 /* WordOfTheDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WordOfTheDay.entitlements; sourceTree = "<group>"; };
+		7BC3A1171958DD9600FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.aTinyFish.WordOfTheDay.Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC3A1191958DD9600FA41D2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7BC3A11D1958DD9600FA41D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC3A11E1958DD9600FA41D2 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		7BC3A11F1958DD9600FA41D2 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		7BC3A1211958DD9600FA41D2 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		7BC3A12C1958DDAC00FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = com.aTinyFish.WordOfTheDay.Widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,13 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B256D751958C3E100B6DFA3 /* WordOfTheDayFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B256D451958A73500B6DFA3 /* Frameworks */ = {
+		7B256D5C1958C3E100B6DFA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC3A1141958DD9600FA41D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFB0ED9195B3AE000BDBABB /* NotificationCenter.framework in Frameworks */,
+				7BAA64BC195A176400B3EC87 /* WordOfTheDayFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				7B256D341958A73500B6DFA3 /* WordOfTheDay */,
-				7B256D4B1958A73500B6DFA3 /* WordOfTheDayTests */,
+				7B256D611958C3E100B6DFA3 /* WordOfTheDayFramework */,
+				7BC3A11B1958DD9600FA41D2 /* Widget */,
+				7BC3A1181958DD9600FA41D2 /* Frameworks */,
 				7B256D331958A73500B6DFA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				7B256D321958A73500B6DFA3 /* WordOfTheDay.app */,
-				7B256D481958A73500B6DFA3 /* WordOfTheDayTests.xctest */,
+				7B256D601958C3E100B6DFA3 /* WordOfTheDayFramework.framework */,
+				7BC3A1171958DD9600FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +165,7 @@
 		7B256D341958A73500B6DFA3 /* WordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
+				7BC3A1121958DBFF00FA41D2 /* WordOfTheDay.entitlements */,
 				7B256D391958A73500B6DFA3 /* AppDelegate.h */,
 				7B256D3A1958A73500B6DFA3 /* AppDelegate.m */,
 				7B256D3C1958A73500B6DFA3 /* ViewController.h */,
@@ -99,24 +186,80 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7B256D4B1958A73500B6DFA3 /* WordOfTheDayTests */ = {
+		7B256D611958C3E100B6DFA3 /* WordOfTheDayFramework */ = {
 			isa = PBXGroup;
 			children = (
-				7B256D4E1958A73500B6DFA3 /* WordOfTheDayTests.m */,
-				7B256D4C1958A73500B6DFA3 /* Supporting Files */,
+				7B256D641958C3E100B6DFA3 /* WordOfTheDayFramework.h */,
+				7B7A80771958CB2300675CC1 /* TFWordOfTheDayFetcher.h */,
+				7B7A80781958CB2300675CC1 /* TFWordOfTheDayFetcher.m */,
+				7BAA64B01959EFE400B3EC87 /* XMLDictionary */,
+				7BC3A10E1958D9DC00FA41D2 /* TFWordOfTheDay.h */,
+				7BC3A10F1958D9DC00FA41D2 /* TFWordOfTheDay.m */,
+				7B256D621958C3E100B6DFA3 /* Supporting Files */,
 			);
-			path = WordOfTheDayTests;
+			path = WordOfTheDayFramework;
 			sourceTree = "<group>";
 		};
-		7B256D4C1958A73500B6DFA3 /* Supporting Files */ = {
+		7B256D621958C3E100B6DFA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B256D4D1958A73500B6DFA3 /* Info.plist */,
+				7B256D631958C3E100B6DFA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BAA64B01959EFE400B3EC87 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				7BAA64B11959EFE400B3EC87 /* XMLDictionary.h */,
+				7BAA64B21959EFE400B3EC87 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		7BC3A1181958DD9600FA41D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3A1191958DD9600FA41D2 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BC3A11B1958DD9600FA41D2 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3A12C1958DDAC00FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.entitlements */,
+				7BC3A11E1958DD9600FA41D2 /* TodayViewController.h */,
+				7BC3A11F1958DD9600FA41D2 /* TodayViewController.m */,
+				7BC3A1211958DD9600FA41D2 /* MainInterface.storyboard */,
+				7BC3A11C1958DD9600FA41D2 /* Supporting Files */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		7BC3A11C1958DD9600FA41D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BC3A11D1958DD9600FA41D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7B256D5D1958C3E100B6DFA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BAA64B31959EFE400B3EC87 /* XMLDictionary.h in Headers */,
+				7B7A80791958CB2300675CC1 /* TFWordOfTheDayFetcher.h in Headers */,
+				7BC3A1101958D9DC00FA41D2 /* TFWordOfTheDay.h in Headers */,
+				7B256D651958C3E100B6DFA3 /* WordOfTheDayFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7B256D311958A73500B6DFA3 /* WordOfTheDay */ = {
@@ -126,33 +269,56 @@
 				7B256D2E1958A73500B6DFA3 /* Sources */,
 				7B256D2F1958A73500B6DFA3 /* Frameworks */,
 				7B256D301958A73500B6DFA3 /* Resources */,
+				7B256D7C1958C3E100B6DFA3 /* Embed Frameworks */,
+				7BC3A12B1958DD9600FA41D2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B256D741958C3E100B6DFA3 /* PBXTargetDependency */,
+				7B256D781958C3E100B6DFA3 /* PBXTargetDependency */,
+				7BC3A1241958DD9600FA41D2 /* PBXTargetDependency */,
+				7BC3A1271958DD9600FA41D2 /* PBXTargetDependency */,
 			);
 			name = WordOfTheDay;
 			productName = WordOfTheDay;
 			productReference = 7B256D321958A73500B6DFA3 /* WordOfTheDay.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B256D471958A73500B6DFA3 /* WordOfTheDayTests */ = {
+		7B256D5F1958C3E100B6DFA3 /* WordOfTheDayFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B256D551958A73500B6DFA3 /* Build configuration list for PBXNativeTarget "WordOfTheDayTests" */;
+			buildConfigurationList = 7B256D791958C3E100B6DFA3 /* Build configuration list for PBXNativeTarget "WordOfTheDayFramework" */;
 			buildPhases = (
-				7B256D441958A73500B6DFA3 /* Sources */,
-				7B256D451958A73500B6DFA3 /* Frameworks */,
-				7B256D461958A73500B6DFA3 /* Resources */,
+				7B256D5B1958C3E100B6DFA3 /* Sources */,
+				7B256D5C1958C3E100B6DFA3 /* Frameworks */,
+				7B256D5D1958C3E100B6DFA3 /* Headers */,
+				7B256D5E1958C3E100B6DFA3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7B256D4A1958A73500B6DFA3 /* PBXTargetDependency */,
 			);
-			name = WordOfTheDayTests;
-			productName = WordOfTheDayTests;
-			productReference = 7B256D481958A73500B6DFA3 /* WordOfTheDayTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = WordOfTheDayFramework;
+			productName = WordOfTheDayFramework;
+			productReference = 7B256D601958C3E100B6DFA3 /* WordOfTheDayFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BC3A1161958DD9600FA41D2 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC3A1281958DD9600FA41D2 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				7BC3A1131958DD9600FA41D2 /* Sources */,
+				7BC3A1141958DD9600FA41D2 /* Frameworks */,
+				7BC3A1151958DD9600FA41D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 7BC3A1171958DD9600FA41D2 /* com.aTinyFish.WordOfTheDay.Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,10 +331,27 @@
 				TargetAttributes = {
 					7B256D311958A73500B6DFA3 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = BM5UEE7L5T;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
-					7B256D471958A73500B6DFA3 = {
+					7B256D5F1958C3E100B6DFA3 = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 7B256D311958A73500B6DFA3;
+					};
+					7BC3A1161958DD9600FA41D2 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = BM5UEE7L5T;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -186,7 +369,8 @@
 			projectRoot = "";
 			targets = (
 				7B256D311958A73500B6DFA3 /* WordOfTheDay */,
-				7B256D471958A73500B6DFA3 /* WordOfTheDayTests */,
+				7B256D5F1958C3E100B6DFA3 /* WordOfTheDayFramework */,
+				7BC3A1161958DD9600FA41D2 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -201,10 +385,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B256D461958A73500B6DFA3 /* Resources */ = {
+		7B256D5E1958C3E100B6DFA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC3A1151958DD9600FA41D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC3A1221958DD9600FA41D2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,21 +413,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B256D441958A73500B6DFA3 /* Sources */ = {
+		7B256D5B1958C3E100B6DFA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B256D4F1958A73500B6DFA3 /* WordOfTheDayTests.m in Sources */,
+				7B7A807A1958CB2300675CC1 /* TFWordOfTheDayFetcher.m in Sources */,
+				7BC3A1111958D9DC00FA41D2 /* TFWordOfTheDay.m in Sources */,
+				7BAA64B41959EFE400B3EC87 /* XMLDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC3A1131958DD9600FA41D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC3A1201958DD9600FA41D2 /* TodayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7B256D4A1958A73500B6DFA3 /* PBXTargetDependency */ = {
+		7B256D741958C3E100B6DFA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B256D311958A73500B6DFA3 /* WordOfTheDay */;
-			targetProxy = 7B256D491958A73500B6DFA3 /* PBXContainerItemProxy */;
+			target = 7B256D5F1958C3E100B6DFA3 /* WordOfTheDayFramework */;
+			targetProxy = 7B256D731958C3E100B6DFA3 /* PBXContainerItemProxy */;
+		};
+		7B256D781958C3E100B6DFA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B256D5F1958C3E100B6DFA3 /* WordOfTheDayFramework */;
+			targetProxy = 7B256D771958C3E100B6DFA3 /* PBXContainerItemProxy */;
+		};
+		7BC3A1241958DD9600FA41D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC3A1161958DD9600FA41D2 /* Widget */;
+			targetProxy = 7BC3A1231958DD9600FA41D2 /* PBXContainerItemProxy */;
+		};
+		7BC3A1271958DD9600FA41D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC3A1161958DD9600FA41D2 /* Widget */;
+			targetProxy = 7BC3A1261958DD9600FA41D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -332,9 +549,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = WordOfTheDay/WordOfTheDay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WordOfTheDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -343,45 +565,94 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = WordOfTheDay/WordOfTheDay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WordOfTheDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		7B256D561958A73500B6DFA3 /* Debug */ = {
+		7B256D7A1958C3E100B6DFA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordOfTheDay.app/WordOfTheDay";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = WordOfTheDayTests/Info.plist;
+				INFOPLIST_FILE = WordOfTheDayFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7B256D571958A73500B6DFA3 /* Release */ = {
+		7B256D7B1958C3E100B6DFA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WordOfTheDay.app/WordOfTheDay";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WordOfTheDayTests/Info.plist;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WordOfTheDayFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BC3A1291958DD9600FA41D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/com.aTinyFish.WordOfTheDay.Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.aTinyFish.WordOfTheDay.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7BC3A12A1958DD9600FA41D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/com.aTinyFish.WordOfTheDay.Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.aTinyFish.WordOfTheDay.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -404,14 +675,25 @@
 				7B256D541958A73500B6DFA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		7B256D551958A73500B6DFA3 /* Build configuration list for PBXNativeTarget "WordOfTheDayTests" */ = {
+		7B256D791958C3E100B6DFA3 /* Build configuration list for PBXNativeTarget "WordOfTheDayFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B256D561958A73500B6DFA3 /* Debug */,
-				7B256D571958A73500B6DFA3 /* Release */,
+				7B256D7A1958C3E100B6DFA3 /* Debug */,
+				7B256D7B1958C3E100B6DFA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC3A1281958DD9600FA41D2 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC3A1291958DD9600FA41D2 /* Debug */,
+				7BC3A12A1958DD9600FA41D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

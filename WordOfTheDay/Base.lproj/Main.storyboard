@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qjO-gU-f6b">
+                                <rect key="frame" x="20" y="136" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f11-Mb-cYN">
+                                <rect key="frame" x="20" y="67" width="280" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38.5" id="cRT-so-zIZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word of the day provided by Wordsmith.org" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFE-LD-EI3">
+                                <rect key="frame" x="20" y="492" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Zzv-AB-UQM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3S-Kn-1zH">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="n6b-St-MBD"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Reset" id="z0r-4K-PH8">
+                                        <connections>
+                                            <action selector="reset:" destination="vXZ-lx-hvc" id="SdC-k0-jNo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YFD-ZT-NXk"/>
+                                    <barButtonItem title="View On Web" id="u82-3P-jDd">
+                                        <connections>
+                                            <action selector="getMoreInfo:" destination="vXZ-lx-hvc" id="Qw3-Gm-2UP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f11-Mb-cYN" firstAttribute="leading" secondItem="qjO-gU-f6b" secondAttribute="leading" id="B13-89-iig"/>
+                            <constraint firstItem="dFE-LD-EI3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Bhg-9Y-Mga"/>
+                            <constraint firstAttribute="trailing" secondItem="f11-Mb-cYN" secondAttribute="trailing" constant="20" id="CKI-Xf-bw4"/>
+                            <constraint firstItem="z3S-Kn-1zH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Pyg-dg-SIt"/>
+                            <constraint firstAttribute="trailing" secondItem="z3S-Kn-1zH" secondAttribute="trailing" id="eWt-lb-Eae"/>
+                            <constraint firstItem="f11-Mb-cYN" firstAttribute="trailing" secondItem="qjO-gU-f6b" secondAttribute="trailing" id="lGc-r1-WZF"/>
+                            <constraint firstItem="qjO-gU-f6b" firstAttribute="top" secondItem="f11-Mb-cYN" secondAttribute="bottom" constant="30" id="opt-7d-lJ4"/>
+                            <constraint firstAttribute="bottom" secondItem="z3S-Kn-1zH" secondAttribute="bottom" id="rs9-z7-VhZ"/>
+                            <constraint firstItem="f11-Mb-cYN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="sVg-iM-e4h"/>
+                            <constraint firstItem="z3S-Kn-1zH" firstAttribute="top" secondItem="dFE-LD-EI3" secondAttribute="bottom" constant="11" id="vd3-ix-hLb"/>
+                            <constraint firstAttribute="trailing" secondItem="dFE-LD-EI3" secondAttribute="trailing" constant="20" id="ydS-WB-wkN"/>
+                            <constraint firstItem="f11-Mb-cYN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="47" id="zkI-Zn-lf1"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="definitionLabel" destination="qjO-gU-f6b" id="Hdq-Rl-lX0"/>
+                        <outlet property="titleLabel" destination="f11-Mb-cYN" id="ncJ-rA-ooB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="504" y="176"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

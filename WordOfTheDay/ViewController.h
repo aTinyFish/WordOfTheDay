@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@import WordOfTheDayFramework;
 
+@interface ViewController : UIViewController <TFWordOfTheDayFetcherDelegate>
+
+@property (nonatomic, strong) TFWordOfTheDayFetcher *wordOfTheDayFetcher;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *definitionLabel;
+@property (nonatomic, strong) NSString *moreInfoURLString;
+
+- (void)refresh;
 
 @end
 
